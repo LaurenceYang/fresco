@@ -189,9 +189,8 @@ android {
     def ndkLibs = [
         ['bitmaps', []],
         ['gifimage', [copyGiflib]],
-        ['imagepipeline', [copyLibjpeg, copyLibpng, copyLibwebp]],
-        ['memchunk', []],
-        ['webpimage', [copyLibwebp]]]
+        ['imagepipeline', [copyLibjpeg, copyLibpng]],
+        ['memchunk', []]]
 
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdkVersion rootProject.ext.compileSdkVersion

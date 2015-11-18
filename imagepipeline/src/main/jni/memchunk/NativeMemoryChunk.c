@@ -19,6 +19,7 @@
 
 static jclass jRuntimeException_class;
 
+// 分配内存空间，返回分配空间地址.
 static jlong NativeMemoryChunk_nativeAllocate(
     JNIEnv* env,
     jclass clzz,
@@ -32,6 +33,7 @@ static jlong NativeMemoryChunk_nativeAllocate(
   return PTR_TO_JLONG(pointer);
 }
 
+// 释放分配空间地址.
 static void NativeMemoryChunk_nativeFree(
     JNIEnv* env,
     jclass clzz,
@@ -41,6 +43,7 @@ static void NativeMemoryChunk_nativeFree(
   free(JLONG_TO_PTR(lpointer));
 }
 
+// 将字节数组里面的数据拷贝到指针所指的内存空间.
 static void NativeMemoryChunk_nativeCopyToByteArray(
     JNIEnv* env,
     jclass clzz,
@@ -57,6 +60,7 @@ static void NativeMemoryChunk_nativeCopyToByteArray(
       JLONG_TO_PTR(lpointer));
 }
 
+// 将内存空间的数据拷贝到字节数组中.
 static void NativeMemoryChunk_nativeCopyFromByteArray(
     JNIEnv* env,
     jclass clzz,
@@ -73,6 +77,7 @@ static void NativeMemoryChunk_nativeCopyFromByteArray(
       JLONG_TO_PTR(lpointer));
 }
 
+// 内存拷贝
 static void NativeMemoryChunk_nativeMemcpy(
     JNIEnv* env,
     jclass clzz,
@@ -84,6 +89,7 @@ static void NativeMemoryChunk_nativeMemcpy(
   memcpy(JLONG_TO_PTR(dst), JLONG_TO_PTR(src), count);
 }
 
+// 读取内存某一个字节
 static jbyte NativeMemoryChunk_nativeReadByte(
     JNIEnv* env,
     jclass clzz,

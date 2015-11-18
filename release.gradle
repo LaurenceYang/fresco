@@ -91,12 +91,12 @@ afterEvaluate { project ->
                 artifactId POM_ARTIFACT_ID
                 packaging POM_PACKAGING
                 description POM_DESCRIPTION
-                url 'https://github.com/facebook/fresco'
+                url 'https://github.com/theYY/fresco'
 
                 scm {
-                    url 'https://github.com/facebook/fresco.git'
-                    connection 'scm:git:https://github.com/facebook/fresco.git'
-                    developerConnection 'scm:git:git@github.com:facebook/fresco.git'
+                    url 'https://github.com/theYY/fresco.git'
+                    connection 'scm:git:https://github.com/theYY/fresco.git'
+                    developerConnection 'scm:git:git@github.com:theYY/fresco.git'
                 }
 
                 licenses {
@@ -109,8 +109,8 @@ afterEvaluate { project ->
 
                 developers {
                     developer {
-                        id 'facebook'
-                        name 'Facebook'
+                        id 'yangyang'
+                        name 'yangyang'
                     }
                 }
             }
