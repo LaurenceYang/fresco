@@ -20,7 +20,7 @@ Fresco是FaceBook推出的一款功能强大的图片加载库。它能有效解
 
 ## 在Android Studio中使用本项目自定义fresco
 如果你使用Gradle进行编译，
-在｀build.gradle｀文件的｀repositories｀添加如下所示配置：
+在`build.gradle`文件的`repositories`添加如下所示配置：
 ```groovy
 mavenCentral()
 ```
