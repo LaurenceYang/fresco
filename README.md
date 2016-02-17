@@ -19,10 +19,23 @@ Fresco是FaceBook推出的一款功能强大的图片加载库。它能有效解
 - 删减后so大小总计：约1200K
 
 ## 在Android Studio中使用本项目自定义fresco
-如果你使用Gradle进行编译，在`build.gradle`文件的`dependencies`区域内添加如下所示配置：
+如果你使用Gradle进行编译，
+在｀build.gradle｀文件的｀repositories｀添加如下所示配置：
+```groovy
+mavenCentral()
+```
+
+在`build.gradle`文件的`dependencies`区域内添加如下所示配置：
 
 ```groovy
-compile 'com.github.theyy:fresco:0.8.2+'
+compile 'com.github.theyy:fresco:0.8.3'
+```
+
+如果你需要配置so文件支持的架构，在`build.gradle`文件的`defaultConfig`区域内添加如下所示配置：
+```groovy
+ndk ｛
+    abiFilters "armeabi" "armeabi-v7a"
+｝
 ```
 
 ## 链接
